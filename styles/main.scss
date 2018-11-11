@@ -46,9 +46,9 @@
     list-style: none;
   }
 
-  .greeting-text {
+//   .greeting-text {
 
-  }
+//   }
     .welcome {
     /* Style for "wELCOME on" */
     width: 550px;
@@ -67,24 +67,45 @@
       }
 }
 
-    .additional-text {
-        // Style for "We are additional text"
-        width: 685px;
-        height: 21px;
+.additional-text {
+    // Style for "We are additional text"
+    width: 685px;
+    height: 21px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    // Text style for "We are a d"
+    font-family: "Open Sans";
+    font-weight: 400;
+    letter-spacing: -1px;
+
+.emphasized-text {
+    // Text style for "years of e"
+    font-family: "Open Sans";
+    font-weight: 700;
+    letter-spacing: -1px;
+    }
+}
+
+.about {
+    height: 614px;
+    background-color: #fff;
+}
+
+.team {
+    height: 726px;
+    background-color: #000;
+    span {
+        // Style for "our team"
+        width: 220px;
+        height: 31px;
         color: #ffffff;
-        font-family: "Open Sans";
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 24px;
-        // Text style for "We are a d"
-        font-family: "Open Sans";
+        font-family: "Open Sans - Semibold";
+        font-size: 42px;
         font-weight: 400;
-        letter-spacing: -1px;
-   
-      .emphasized-text {
-        // Text style for "years of e"
-        font-family: "Open Sans";
-        font-weight: 700;
-        letter-spacing: -1px;
-        }
+        line-height: 24px;
+        text-transform: uppercase;
+    }
 }
