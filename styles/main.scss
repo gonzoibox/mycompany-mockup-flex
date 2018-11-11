@@ -19,15 +19,12 @@
     background-color: #ffffff;
     overflow: hidden;
   }
-
-  a {
-    text-decoration: none;
+    header {
+      width: 1200px;
+      height: 590px;
+      background-color: #000;
   }
 
-  .nav ul {
-      list-style: none;
-  }
-  
 /* Style for "mycompany" */
   .logo {   
     width: 165px;
@@ -39,3 +36,55 @@
     line-height: 24px;
     text-transform: uppercase;
   }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .main-menu {
+    list-style: none;
+  }
+
+  .greeting-text {
+
+  }
+    .welcome {
+    /* Style for "wELCOME on" */
+    width: 550px;
+    height: 33px;
+    color: #999999;
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    .company{
+        color: #fcac45;
+        font-family: "Open Sans";
+        font-weight: 700;
+        letter-spacing: -2.2px;
+      }
+}
+
+    .additional-text {
+        // Style for "We are additional text"
+        width: 685px;
+        height: 21px;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        // Text style for "We are a d"
+        font-family: "Open Sans";
+        font-weight: 400;
+        letter-spacing: -1px;
+   
+      .emphasized-text {
+        // Text style for "years of e"
+        font-family: "Open Sans";
+        font-weight: 700;
+        letter-spacing: -1px;
+        }
+}

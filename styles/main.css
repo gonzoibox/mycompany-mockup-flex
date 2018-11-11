@@ -21,12 +21,10 @@ body {
   overflow: hidden;
 }
 
-a {
-  text-decoration: none;
-}
-
-.nav ul {
-  list-style: none;
+header {
+  width: 1200px;
+  height: 590px;
+  background-color: #000;
 }
 
 /* Style for "mycompany" */
@@ -39,5 +37,52 @@ a {
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-menu {
+  list-style: none;
+}
+
+.welcome {
+  /* Style for "wELCOME on" */
+  width: 550px;
+  height: 33px;
+  color: #999999;
+  font-family: "Open Sans";
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.welcome .company {
+  color: #fcac45;
+  font-family: "Open Sans";
+  font-weight: 700;
+  letter-spacing: -2.2px;
+}
+
+.additional-text {
+  width: 685px;
+  height: 21px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.additional-text .emphasized-text {
+  font-family: "Open Sans";
+  font-weight: 700;
+  letter-spacing: -1px;
 }
 /*# sourceMappingURL=main.css.map */
