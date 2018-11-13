@@ -111,4 +111,18 @@ a {
   height: 736px;
   background-color: #fff;
 }
+
+.clients {
+  height: 517px;
+  background-color: #000;
+}
+
+.some-clients {
+  color: #fff;
+}
+
+.portfolio {
+  height: 1133px;
+  background-color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
