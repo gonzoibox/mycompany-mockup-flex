@@ -83,6 +83,11 @@ main .main-welcome .mycompany {
   color: #fcac45;
 }
 
+.wrapper {
+  width: 76%;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1107px) {
   nav {
     margin-left: 9%;
