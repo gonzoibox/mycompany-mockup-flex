@@ -9,128 +9,85 @@
   }
 
   .container {
-    position: relative;
-    margin: 0 auto;
-    width: 1200px;
-    height: 6200px;
     background-color: #ffffff;
-    overflow: hidden;
   }
 
-    header {
-      width: 1200px;
-      height: 590px;
-      background-color: #000;
-  }
+  header {
+    width: 100%;
+    display: flex;
+    background-color: #000;
 
-/* Style for "mycompany" */
-  .logo {   
-    width: 165px;
-    height: 19px;
-    color: #ffffff;
-    font-family: "Open Sans - Extrabold";
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
+    .header-logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 56px 0 0 12%;
+      cursor: pointer;
+    }
   }
+  
+nav {
+  text-transform: uppercase;
+  margin: 56px 0 0 29%;
+}
+
+.topnav {
 
   a {
     text-decoration: none;
+    color: rgb(212, 17, 17);
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover {
+      border-bottom: 3px solid rgb(248, 211, 2);
+    }
+
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1107px) {
+  nav {
+    margin-left: 9%;
+  }
+}
+
+@media screen and (max-width: 841px) {
+  .topnav a{
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    margin-top: -17px;
+    display: block;
     color: #fff;
+    font-size: 25px;
   }
-
-  .main-menu {
-    list-style: none;
+  nav {
+    width: 100%;
   }
-
-    .welcome {
-    /* Style for "wELCOME on" */
-    width: 550px;
-    height: 33px;
-    color: #999999;
-    font-family: "Open Sans";
-    font-size: 40px;
-    font-weight: 300;
-    line-height: 24px;
-    text-transform: uppercase;
-    .company{
-        color: #fcac45;
-        font-family: "Open Sans";
-        font-weight: 700;
-        letter-spacing: -2.2px;
-      }
-}
-
-.additional-text {
-    // Style for "We are additional text"
-    width: 685px;
-    height: 21px;
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    // Text style for "We are a d"
-    font-family: "Open Sans";
-    font-weight: 400;
-    letter-spacing: -1px;
-
-.emphasized-text {
-    // Text style for "years of e"
-    font-family: "Open Sans";
-    font-weight: 700;
-    letter-spacing: -1px;
-    }
-}
-
-.about {
-    height: 614px;
-    background-color: #fff;
-}
-
-.our-team {
-    height: 726px;
-    background-color: #000;
-    span {
-        // Style for "our team"
-        width: 220px;
-        height: 31px;
-        color: #ffffff;
-        font-family: "Open Sans - Semibold";
-        font-size: 42px;
-        font-weight: 400;
-        line-height: 24px;
-        text-transform: uppercase;
-    }
-}
-
-.our-services {
-    height: 736px;
-    background-color: #fff;
-}
-
-.our-clients {
-  height: 517px; 
-  background-color: #000;
-}
-
-.portfolio {
-  height: 1133px;
-  background-color: #fff;
-}
-
-.testimonials {
-  height: 562px;
-  background-color: #000;
-}
-
-.contact-us {
-  height: 836px;
-  background-color: #fff;
-}
-
-footer {
-  height: 92px;
-  background-color: #222222;
+  .topnav.responsive {
+    position: relative;
+    top: 50px;
+    left: -200px;
+  }
+  header .topnav.responsive {
+    height: 340px;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    top: -50px;
+    right: -200px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+  }
 }
