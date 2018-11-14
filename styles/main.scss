@@ -83,8 +83,33 @@ main {
   margin: 0 auto;
 }
 
+main {
+  .main-about {
+    display: flex;
+    padding: 100px 0 100px 0;
+  }
+}
 
+.about-right {
+  margin-left: 175px;
 
+  h1 {
+    display: inline-block;
+    border-bottom: 3px solid #fcac45;
+    padding-bottom: 20px;
+  }
+
+  p {
+    margin: 30px 0 50px 0;
+    color: #6c6c6c;
+  }
+
+  li {
+    background: url(/images/marker.svg) 6px no-repeat;
+    padding-left: 25px;
+    margin-top: 10px;
+  }
+}
 
 
 
@@ -136,5 +161,11 @@ main {
   .topnav.responsive a {
     float: none;
     display: block;
+    text-align: left;
+  }
+
+
+  main .main-welcome {
+    
   }
 }
