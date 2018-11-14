@@ -2,13 +2,10 @@
     box-sizing: border-box;
   }
 
-  html, body {
-    margin: 0;
-  }
-
   body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #868186;
+    height: 100%;
   }
 
   .container {
@@ -19,6 +16,7 @@
     background-color: #ffffff;
     overflow: hidden;
   }
+
     header {
       width: 1200px;
       height: 590px;
@@ -46,9 +44,6 @@
     list-style: none;
   }
 
-//   .greeting-text {
-
-//   }
     .welcome {
     /* Style for "wELCOME on" */
     width: 550px;
