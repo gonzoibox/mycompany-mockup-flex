@@ -115,9 +115,57 @@ main {
   min-width: 100%;
 }
 
+.main-team {
+  background-color: #000;
+  text-align: center;
+  padding: 100px 0 165px 0;
+  color: #fff;
 
+  h1 {
+    font-size: 41px;
+    padding-bottom: 30px;
+  }
+}
 
+.line {
+  width: 100px;
+  height: 3px;
+  background: #fcac45;
+  position: relative;
+  left: 45.5%;
+  margin-bottom: 105px;
 
+}
+
+.photo {
+  background: #d7d7d7;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.team-cards {
+  display: flex;
+}
+
+.name {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.position {
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.about-position {
+  font-size: 14px;
+}
+
+.card {
+  margin: 0 20px;
+}
 
 
 
@@ -203,6 +251,10 @@ main {
       font-size: 20px;
       margin-top: 10px;
     }
+  }
+
+  .team-cards {
+    flex-direction: column;
   }
 
 }
