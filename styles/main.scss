@@ -228,6 +228,28 @@ main {
   }
 }
 
+.main-work {
+  text-align: center;
+  padding: 100px 0 100px 0;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 175px;
+    color: #6c6c6c;
+  }
+
+  img:hover {
+    opacity: 0.9;
+  }
+}
+
+
+
+
+
 
 @media screen and (max-width: 1107px) {
   nav {
@@ -317,6 +339,18 @@ main {
 
   .services-cards {
     grid-template-columns: auto;
+  }
+
+  .line-1 img:not(:first-child) {
+    display: none;
+  }
+
+  .line-2 img:not(:first-child) {
+    display: none;
+  }
+
+  .line-3 img:not(:first-child) {
+    display: none;
   }
 }
 
