@@ -196,10 +196,15 @@ main {
   }
 }
 
+.gallery {
+  display: flex;
+}
+
 .main-testimonials {
   background: #000;
   text-align: center;
   color: #fff;
+  padding-bottom: 20px;
 
   h1 {
     text-transform: uppercase;
@@ -263,6 +268,14 @@ main {
 
 .form-inputs {
   display: flex;
+
+  p:last-child {
+    margin-left: 20px;
+  }
+
+  p {
+    text-align: left;
+  }
 }
 
 input {
@@ -319,13 +332,14 @@ footer {
 .social {
   display: flex;
   justify-content: center;
+  padding: 20px;
 
   img {
     margin-left: 12px;
   }
 
   &:hover {
-    opacity: 0.9;
+    opacity: 0.4;
   }
 }
 
