@@ -95,7 +95,6 @@ main {
 
   h1 {
     display: inline-block;
-    border-bottom: 3px solid #fcac45;
     padding-bottom: 20px;
   }
 
@@ -237,7 +236,7 @@ main {
 }
 
 .contact-wrapper {
-  width: 753px;
+  width: 76%;
   margin: 0 auto;
   color: #636363;
 
@@ -253,10 +252,12 @@ main {
 
 .contact-form {
   padding: 100px 0 100px 0;
+  width: 100%;
 
   h1,p {
   text-align: center;
   color: #000;
+  width: 100%;
   }
 }
 
@@ -265,7 +266,7 @@ main {
 }
 
 input {
-  width: 360px;
+  width: 100%;
   height: 40px;
   font-size: 20px;
   margin-bottom: 30px;
