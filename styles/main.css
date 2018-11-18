@@ -165,6 +165,36 @@ main .main-welcome .mycompany {
           justify-content: center;
 }
 
+@media (max-width: 841px) {
+  .main-about {
+    padding: 50px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0;
+  }
+  .main-about .about-left {
+    text-align: center;
+    margin-left: 0;
+  }
+  .main-about .about-left .mw-100 {
+    max-width: 100%;
+  }
+  .main-about .about-right {
+    text-align: center;
+    margin-left: 0;
+  }
+  .main-about .about-right li {
+    color: #5a5a5a;
+    text-align: left;
+  }
+  .main-about .about-right h1 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
 .about-right {
   margin-left: 30px;
 }
@@ -504,32 +534,6 @@ footer .social img:hover {
 }
 
 @media screen and (max-width: 841px) {
-  .mw-100 {
-    max-width: 100%;
-  }
-  .main-about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 50px 0;
-  }
-  .about-left {
-    text-align: center;
-    margin-left: 0;
-  }
-  .about-right {
-    text-align: center;
-    margin-left: 0;
-  }
-  .about-right li {
-    color: #5a5a5a;
-    text-align: left;
-  }
-  .about-right h1 {
-    font-size: 20px;
-    margin-top: 10px;
-  }
   .team-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

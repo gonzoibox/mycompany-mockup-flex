@@ -167,6 +167,36 @@ main {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+
+  @include media ("max-width: 841px") {
+    padding: 50px 0;
+    flex-direction: column;
+    padding: $padding-bottom-presset;
+
+    .about-left {
+      text-align: center;
+      margin-left: 0;
+  
+      .mw-100 {
+        max-width: 100%;
+      }
+    }
+
+    .about-right {
+      text-align: center;
+      margin-left: 0;
+  
+      li {
+        color: #5a5a5a;
+        text-align: left;
+      }
+  
+      h1 {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
 .about-right {
@@ -511,34 +541,40 @@ footer {
 
   // }
 
-  .mw-100 {
-    max-width: 100%;
-  }
+  
 
-  .main-about {
-    flex-direction: column;
-    padding: $padding-bottom-presset;
-  }
+  // .main-about {
+  //   flex-direction: column;
+  //   padding: $padding-bottom-presset;
 
-  .about-left {
-    text-align: center;
-    margin-left: 0;
-  }
+  //   .about-left {
+  //     text-align: center;
+  //     margin-left: 0;
+  
+  //     .mw-100 {
+  //       max-width: 100%;
+  //     }
+  //   }
 
-  .about-right {
-    text-align: center;
-    margin-left: 0;
+  //   .about-right {
+  //     text-align: center;
+  //     margin-left: 0;
+  
+  //     li {
+  //       color: #5a5a5a;
+  //       text-align: left;
+  //     }
+  
+  //     h1 {
+  //       font-size: 20px;
+  //       margin-top: 10px;
+  //     }
+  //   }
+  // }
 
-    li {
-      color: #5a5a5a;
-      text-align: left;
-    }
+ 
 
-    h1 {
-      font-size: 20px;
-      margin-top: 10px;
-    }
-  }
+  
 
   .team-cards {
     flex-direction: column;
