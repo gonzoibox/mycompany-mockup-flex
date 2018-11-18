@@ -45,7 +45,7 @@ nav {
 }
 
 .topnav a:hover {
-  border-bottom: 3px solid #f8d302;
+  border-bottom: 3px solid #fcac45;
 }
 
 .topnav .icon {
@@ -261,7 +261,7 @@ main .main-welcome .mycompany {
 }
 
 .main-testimonials span {
-  padding-bottom: 50px;
+  padding-bottom: 50px 0;
 }
 
 .main-work {
@@ -472,7 +472,7 @@ footer .social img:hover {
     padding: 50px 0;
   }
   main .main-welcome {
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
   }
   main .main-welcome p {
     font-size: 14px;

@@ -1,3 +1,8 @@
+// Variables
+$bg-color: #000;
+$color: #fcac45;
+$padding-bottom-pesset: 50px 0;
+
 * {
     box-sizing: border-box;
   }
@@ -15,10 +20,10 @@
   header {
     width: 100%;
     display: flex;
-    background-color: #000;
+    background-color: $bg-color;
 
     .header-logo {
-      color: #fcac45; 
+      color: $color; 
       font-size: 24px;
       font-weight: 800;
       text-transform: uppercase;
@@ -43,7 +48,7 @@ nav {
     font-weight: bold;
 
     &:hover {
-      border-bottom: 3px solid rgb(248, 211, 2);
+      border-bottom: 3px solid $color;
     }
   }
 
@@ -58,7 +63,7 @@ main {
   width: 100%;
 
   .main-welcome {
-    background-color: #000;
+    background-color: $bg-color;
     text-align: center;
     padding: 200px 0 410px 0;
     
@@ -73,7 +78,7 @@ main {
     }
 
     .mycompany {
-      color: #fcac45; 
+      color: $color; 
     }
   }
 }
@@ -117,7 +122,7 @@ main {
 }
 
 .main-team {
-  background-color: #000;
+  background-color: $bg-color;
   text-align: center;
   padding: 100px 0 165px 0;
   color: #fff;
@@ -173,7 +178,7 @@ main {
 
   p {
     color: #6c6c6c;
-    padding: 50px 0;
+    padding: $padding-bottom-pesset;
   }
 }
 
@@ -183,7 +188,7 @@ main {
 }
 
 .main-clients {
-  background: #000;
+  background: $bg-color;
   padding: 100px 0 205px 0;
   color: #fff;
   text-align: center;
@@ -220,7 +225,7 @@ main {
 }
 
 .main-testimonials {
-  background: #000;
+  background: $bg-color;
   text-align: center;
   color: #fff;
   padding-bottom: 20px;
@@ -237,7 +242,7 @@ main {
   }
 
   span {
-    padding-bottom: 50px;
+    padding-bottom: $padding-bottom-pesset;
   }
 }
 
@@ -280,7 +285,7 @@ main {
 
   h1,p {
   text-align: center;
-  color: #000;
+  color: $bg-color;
   width: 100%;
   }
 }
@@ -337,7 +342,7 @@ h1:after {
   display: block;
   margin: 0 auto;
   width: 100px;
-  border-bottom: 3px solid #fcac45;
+  border-bottom: 3px solid $color;
   padding-top: 30px;
 }
 
@@ -361,7 +366,6 @@ footer {
   }
  }
 }
-
 
 /* media query */
 @media screen and (max-width: 1107px) {
@@ -436,7 +440,7 @@ footer {
 
     &:hover {
       padding-bottom: 1px;
-      border-bottom: 3px solid #fcac45;
+      border-bottom: 3px solid $color;
     }
   }
 
@@ -447,15 +451,15 @@ footer {
   .main-services {
     h1 {
     text-align: center;
-    padding: 50px 0;
+    padding: $padding-bottom-pesset;
     }
 
     p {
-      padding: 50px 0;
+      padding: $padding-bottom-pesset;
     }
   }
   main .main-welcome {
-    padding: 50px 0 50px 0;
+    padding: $padding-bottom-pesset;
 
     p {
       font-size: 14px;
@@ -473,7 +477,7 @@ footer {
 
   .main-about {
     flex-direction: column;
-    padding: 50px 0;
+    padding: $padding-bottom-pesset;
   }
 
   .about-left {
