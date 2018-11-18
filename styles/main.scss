@@ -279,7 +279,7 @@ main {
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 20px;
 
-  @include media("max-width: 1107px") {
+  @include media("max-width: 841px") {
     grid-template-columns: auto;
   }
 }
@@ -408,6 +408,19 @@ main {
       margin: 0;
     }
   } 
+  @include media("max-width: 841px") {
+    .line-1 div:not(:first-child) {
+      display: none;
+    }
+  
+    .line-2 div:not(:first-child) {
+      display: none;
+    }
+  
+    .line-3 div:not(:first-child) {
+      display: none;
+    }
+  }  
 }
 
 .contact-wrapper {
@@ -512,89 +525,3 @@ footer {
   }
  }
 }
-
-
-//media query
-@media screen and (max-width: 841px) {
-
-  // .main-services {
-  //   h1 {
-  //   text-align: center;
-  //   padding: $padding-bottom-presset;
-  //   }
-
-  //   p {
-  //     padding: $padding-bottom-presset;
-  //   }
-  // }
-
-  // .main-welcome {
-  //   padding: $padding-bottom-presset;
-
-  //   p {
-  //     font-size: 14px;
-  //   }
-
-  //   h1 {
-  //     font-size: 25px;
-  //   }
-
-  // }
-
-  
-
-  // .main-about {
-  //   flex-direction: column;
-  //   padding: $padding-bottom-presset;
-
-  //   .about-left {
-  //     text-align: center;
-  //     margin-left: 0;
-  
-  //     .mw-100 {
-  //       max-width: 100%;
-  //     }
-  //   }
-
-  //   .about-right {
-  //     text-align: center;
-  //     margin-left: 0;
-  
-  //     li {
-  //       color: #5a5a5a;
-  //       text-align: left;
-  //     }
-  
-  //     h1 {
-  //       font-size: 20px;
-  //       margin-top: 10px;
-  //     }
-  //   }
-  // }
-
- 
-
-  
-
-  .team-cards {
-    flex-direction: column;
-  }
-
-  .services-cards {
-    grid-template-columns: auto;
-  }
-
-  .line-1 div:not(:first-child) {
-    display: none;
-  }
-
-  .line-2 div:not(:first-child) {
-    display: none;
-  }
-
-  .line-3 div:not(:first-child) {
-    display: none;
-  }
-}
-
-
