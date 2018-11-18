@@ -1,7 +1,7 @@
 // Variables
 $bg-color: #000;
 $color: #fcac45;
-$padding-bottom-pesset: 50px 0;
+$padding-bottom-presset: 50px 0;
 
 // Query breakepoints
 // $breakPoint-max: 1107px;
@@ -50,6 +50,10 @@ nav {
   @include media("max-width: 1107px") {
       margin-left: 9%;
   }
+
+  @include media ("max-width: 841px") {
+    width: 100%;
+  }
 }
 
 .topnav {
@@ -65,12 +69,54 @@ nav {
     &:hover {
       border-bottom: 3px solid $color;
     }
+
+    @include media ("max-width: 841px") {
+        display: none;
+        font-size: 17px;
+    
+        &.icon {
+          float: right;
+          margin-top: -17px;
+          display: block;
+          color: #fff;
+          font-size: 25px;
+      }
+    }
   }
+}
+
+  .topnav.responsive {
+    @include media ("max-width: 841px") {
+      position: relative;
+      top: 50px;
+      left: -200px;
+      height: 240px;
+
+    a {
+      float: none;
+      display: block;
+      text-align: left;
+  
+      &:hover {
+        padding-bottom: 1px;
+        border-bottom: 3px solid $color;
+      }
+
+      &.icon {
+        position: absolute;
+        top: -50px;
+        right: -200px;
+      }
+    }
+  }
+}
+ 
+
 
   .icon {
     display: none;
   }
-}
+
 
 main {
   display: flex;
@@ -146,6 +192,10 @@ main {
     font-size: 41px;
     padding-bottom: 30px;
   }
+
+  @include media ("max-width: 841px"){
+    padding: 50px 0;
+  }
 }
 
 .photo {
@@ -201,7 +251,7 @@ main {
 
   p {
     color: #6c6c6c;
-    padding: $padding-bottom-pesset;
+    padding: $padding-bottom-presset;
   }
 }
 
@@ -265,7 +315,7 @@ main {
   }
 
   span {
-    padding-bottom: $padding-bottom-pesset;
+    padding-bottom: $padding-bottom-presset;
   }
 }
 
@@ -415,66 +465,18 @@ footer {
 
 @media screen and (max-width: 841px) {
 
-  .topnav a{
-    display: none;
-    font-size: 17px;
-  }
-
-  .topnav a.icon {
-    float: right;
-    margin-top: -17px;
-    display: block;
-    color: #fff;
-    font-size: 25px;
-  }
-
-  nav {
-    width: 100%;
-  }
-
-  .topnav.responsive {
-    position: relative;
-    top: 50px;
-    left: -200px;
-  }
-
-  header .topnav.responsive {
-    height: 240px;
-  }
-
-  .topnav.responsive a.icon {
-    position: absolute;
-    top: -50px;
-    right: -200px;
-  }
-  
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-
-    &:hover {
-      padding-bottom: 1px;
-      border-bottom: 3px solid $color;
-    }
-  }
-
-  .main-team {
-    padding: 50px 0;
-  }
-
   .main-services {
     h1 {
     text-align: center;
-    padding: $padding-bottom-pesset;
+    padding: $padding-bottom-presset;
     }
 
     p {
-      padding: $padding-bottom-pesset;
+      padding: $padding-bottom-presset;
     }
   }
   main .main-welcome {
-    padding: $padding-bottom-pesset;
+    padding: $padding-bottom-presset;
 
     p {
       font-size: 14px;
@@ -492,7 +494,7 @@ footer {
 
   .main-about {
     flex-direction: column;
-    padding: $padding-bottom-pesset;
+    padding: $padding-bottom-presset;
   }
 
   .about-left {
