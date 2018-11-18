@@ -35,6 +35,12 @@ nav {
   margin: 56px 0 0 29%;
 }
 
+@media (max-width: 1107px) {
+  nav {
+    margin-left: 9%;
+  }
+}
+
 .topnav a {
   text-decoration: none;
   color: #d41111;
@@ -154,6 +160,15 @@ main .main-welcome .mycompany {
   display: flex;
 }
 
+@media (max-width: 1107px) {
+  .team-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .name {
   font-size: 20px;
   margin-bottom: 7px;
@@ -179,6 +194,13 @@ main .main-welcome .mycompany {
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
   grid-column-gap: 20px;
+}
+
+@media (max-width: 1107px) {
+  .services-cards {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
 }
 
 .main-services h1 {
@@ -280,6 +302,21 @@ main .main-welcome .mycompany {
 
 .main-work img:hover {
   opacity: 0.9;
+}
+
+@media (max-width: 1107px) {
+  .gallery .line-1 div:not(:nth-child(odd)) {
+    display: none;
+  }
+  .gallery .line-2 div:not(:nth-child(odd)) {
+    display: none;
+  }
+  .gallery .line-3 div:not(:nth-child(odd)) {
+    display: none;
+  }
+  .gallery .line div {
+    margin: 0;
+  }
 }
 
 .contact-wrapper {
@@ -393,35 +430,6 @@ footer .social img {
 
 footer .social img:hover {
   opacity: 0.4;
-}
-
-/* media query */
-@media screen and (max-width: 1107px) {
-  nav {
-    margin-left: 9%;
-  }
-  .team-cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .services-cards {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  .line-1 div:not(:nth-child(odd)) {
-    display: none;
-  }
-  .line-2 div:not(:nth-child(odd)) {
-    display: none;
-  }
-  .line-3 div:not(:nth-child(odd)) {
-    display: none;
-  }
-  .line div {
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 841px) {

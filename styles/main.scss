@@ -4,12 +4,12 @@ $color: #fcac45;
 $padding-bottom-pesset: 50px 0;
 
 // Query breakepoints
-$breakPoint-max: 1107px;
-$breakPoint-min: 841px;
+// $breakPoint-max: 1107px;
+// $breakPoint-min: 841px;
 
 //Mixins for media query
 @mixin media($queryString){
-  @media #{$queryString} {
+  @media ($queryString) {
     @content;
   }
 }
@@ -47,7 +47,7 @@ nav {
   text-transform: uppercase;
   margin: 56px 0 0 29%;
 
-  @include media($breakPoint-max) {
+  @include media("max-width: 1107px") {
       margin-left: 9%;
   }
 }
@@ -159,7 +159,7 @@ main {
 .team-cards {
   display: flex;
 
-  @include media($breakPoint-max) {
+  @include media("max-width: 1107px") {
     flex-direction: column;
   } 
 }
@@ -188,7 +188,7 @@ main {
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 20px;
 
-  @include media($breakPoint-max) {
+  @include media("max-width: 1107px") {
     grid-template-columns: auto;
   }
 }
@@ -289,7 +289,7 @@ main {
 
 .gallery {
 
-  @include media($breakPoint-max) {
+  @include media("max-width: 1107px") {
     .line-1 div:not(:nth-child(odd)) {
       display: none;
     }
