@@ -207,9 +207,12 @@ main {
   flex-wrap: nowrap;
   align-items: stretch;
 
-  div img {
-    display: block;
+  div {
     margin: 0 2px;
+  }
+
+  div img {
+    margin: 0px 2px;
     max-width: 100%;
     transition: all 1.1s;
 
@@ -386,6 +389,10 @@ footer {
 
   .line-3 div:not(:nth-child(odd)) {
     display: none;
+  }
+
+  .line div {
+    margin: 0;
   }
 }
 

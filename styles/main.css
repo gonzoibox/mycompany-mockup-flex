@@ -217,9 +217,12 @@ main .main-about {
           align-items: stretch;
 }
 
-.line div img {
-  display: block;
+.line div {
   margin: 0 2px;
+}
+
+.line div img {
+  margin: 0px 2px;
   max-width: 100%;
   -webkit-transition: all 1.1s;
   transition: all 1.1s;
@@ -406,6 +409,9 @@ footer {
   }
   .line-3 div:not(:nth-child(odd)) {
     display: none;
+  }
+  .line div {
+    margin: 0;
   }
 }
 
