@@ -3,6 +3,17 @@ $bg-color: #000;
 $color: #fcac45;
 $padding-bottom-pesset: 50px 0;
 
+// Query breakepoints
+$breakPoint-max: 1107px;
+$breakPoint-min: 841px;
+
+//Mixins for media query
+@mixin media($queryString){
+  @media #{$queryString} {
+    @content;
+  }
+}
+
 * {
     box-sizing: border-box;
   }
@@ -35,6 +46,10 @@ $padding-bottom-pesset: 50px 0;
 nav {
   text-transform: uppercase;
   margin: 56px 0 0 29%;
+
+  @include media($breakPoint-max) {
+      margin-left: 9%;
+  }
 }
 
 .topnav {
@@ -143,6 +158,10 @@ main {
 
 .team-cards {
   display: flex;
+
+  @include media($breakPoint-max) {
+    flex-direction: column;
+  } 
 }
 
 .name {
@@ -168,6 +187,10 @@ main {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 20px;
+
+  @include media($breakPoint-max) {
+    grid-template-columns: auto;
+  }
 }
 
 .main-services {
@@ -262,6 +285,27 @@ main {
   img:hover {
     opacity: 0.9;
   }
+}
+
+.gallery {
+
+  @include media($breakPoint-max) {
+    .line-1 div:not(:nth-child(odd)) {
+      display: none;
+    }
+  
+    .line-2 div:not(:nth-child(odd)) {
+      display: none;
+    }
+  
+    .line-3 div:not(:nth-child(odd)) {
+      display: none;
+    }
+  
+    .line div {
+      margin: 0;
+    }
+  } 
 }
 
 .contact-wrapper {
@@ -367,36 +411,7 @@ footer {
  }
 }
 
-/* media query */
-@media screen and (max-width: 1107px) {
-  nav {
-    margin-left: 9%;
-  }
 
-  .team-cards {
-    flex-direction: column;
-  }
-
-  .services-cards {
-    grid-template-columns: auto;
-  }
-
-  .line-1 div:not(:nth-child(odd)) {
-    display: none;
-  }
-
-  .line-2 div:not(:nth-child(odd)) {
-    display: none;
-  }
-
-  .line-3 div:not(:nth-child(odd)) {
-    display: none;
-  }
-
-  .line div {
-    margin: 0;
-  }
-}
 
 @media screen and (max-width: 841px) {
 
@@ -498,7 +513,6 @@ footer {
       font-size: 20px;
       margin-top: 10px;
     }
-
   }
 
   .team-cards {
