@@ -208,7 +208,8 @@ main {
   align-items: stretch;
 
   div img {
-    margin: 2px;
+    display: block;
+    margin: 0 2px;
     max-width: 100%;
     transition: all 1.1s;
 
@@ -365,6 +366,26 @@ footer {
 @media screen and (max-width: 1107px) {
   nav {
     margin-left: 9%;
+  }
+
+  .team-cards {
+    flex-direction: column;
+  }
+
+  .services-cards {
+    grid-template-columns: auto;
+  }
+
+  .line-1 div:not(:nth-child(odd)) {
+    display: none;
+  }
+
+  .line-2 div:not(:nth-child(odd)) {
+    display: none;
+  }
+
+  .line-3 div:not(:nth-child(odd)) {
+    display: none;
   }
 }
 
