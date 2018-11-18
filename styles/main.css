@@ -132,6 +132,18 @@ main .main-welcome .mycompany {
   color: #fcac45;
 }
 
+@media (max-width: 841px) {
+  main .main-welcome {
+    padding: 50px 0;
+  }
+  main .main-welcome p {
+    font-size: 14px;
+  }
+  main .main-welcome h1 {
+    font-size: 25px;
+  }
+}
+
 .wrapper {
   width: 76%;
   margin: 0 auto;
@@ -209,7 +221,7 @@ main .main-welcome .mycompany {
   display: flex;
 }
 
-@media (max-width: 1107px) {
+@media (max-width: 841px) {
   .team-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -260,6 +272,16 @@ main .main-welcome .mycompany {
 .main-services p {
   color: #6c6c6c;
   padding: 50px 0;
+}
+
+@media (max-width: 841px) {
+  .main-services h1 {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .main-services p {
+    padding: 50px 0;
+  }
 }
 
 .services-card h4 {
@@ -482,22 +504,6 @@ footer .social img:hover {
 }
 
 @media screen and (max-width: 841px) {
-  .main-services h1 {
-    text-align: center;
-    padding: 50px 0;
-  }
-  .main-services p {
-    padding: 50px 0;
-  }
-  main .main-welcome {
-    padding: 50px 0;
-  }
-  main .main-welcome p {
-    font-size: 14px;
-  }
-  main .main-welcome h1 {
-    font-size: 25px;
-  }
   .mw-100 {
     max-width: 100%;
   }

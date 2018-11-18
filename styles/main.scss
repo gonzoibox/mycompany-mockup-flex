@@ -111,8 +111,6 @@ nav {
   }
 }
  
-
-
   .icon {
     display: none;
   }
@@ -140,6 +138,19 @@ main {
 
     .mycompany {
       color: $color; 
+    }
+
+    @include media ("max-width: 841px") {
+
+      padding: $padding-bottom-presset;
+  
+      p {
+        font-size: 14px;
+      }
+  
+      h1 {
+        font-size: 25px;
+      }
     }
   }
 }
@@ -194,7 +205,7 @@ main {
   }
 
   @include media ("max-width: 841px"){
-    padding: 50px 0;
+    padding: $padding-bottom-presset;
   }
 }
 
@@ -209,7 +220,7 @@ main {
 .team-cards {
   display: flex;
 
-  @include media("max-width: 1107px") {
+  @include media("max-width: 841px") {
     flex-direction: column;
   } 
 }
@@ -252,6 +263,17 @@ main {
   p {
     color: #6c6c6c;
     padding: $padding-bottom-presset;
+  }
+
+  @include media("max-width: 841px") {
+    h1 {
+    text-align: center;
+    padding: $padding-bottom-presset;
+    }
+
+    p {
+      padding: $padding-bottom-presset;
+    }
   }
 }
 
@@ -462,31 +484,32 @@ footer {
 }
 
 
-
+//media query
 @media screen and (max-width: 841px) {
 
-  .main-services {
-    h1 {
-    text-align: center;
-    padding: $padding-bottom-presset;
-    }
+  // .main-services {
+  //   h1 {
+  //   text-align: center;
+  //   padding: $padding-bottom-presset;
+  //   }
 
-    p {
-      padding: $padding-bottom-presset;
-    }
-  }
-  main .main-welcome {
-    padding: $padding-bottom-presset;
+  //   p {
+  //     padding: $padding-bottom-presset;
+  //   }
+  // }
 
-    p {
-      font-size: 14px;
-    }
+  // .main-welcome {
+  //   padding: $padding-bottom-presset;
 
-    h1 {
-      font-size: 25px;
-    }
+  //   p {
+  //     font-size: 14px;
+  //   }
 
-  }
+  //   h1 {
+  //     font-size: 25px;
+  //   }
+
+  // }
 
   .mw-100 {
     max-width: 100%;
