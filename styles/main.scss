@@ -196,8 +196,26 @@ main {
   }
 }
 
-.gallery {
+// .gallery {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.line {
   display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: stretch;
+
+  div img {
+    margin: 2px;
+    max-width: 100%;
+    transition: all 1.1s;
+
+  &:hover:first-child {
+      transform: scale(1.1)
+    }
+  }
 }
 
 .main-testimonials {
@@ -434,15 +452,15 @@ footer {
     grid-template-columns: auto;
   }
 
-  .line-1 img:not(:first-child) {
+  .line-1 div:not(:first-child) {
     display: none;
   }
 
-  .line-2 img:not(:first-child) {
+  .line-2 div:not(:first-child) {
     display: none;
   }
 
-  .line-3 img:not(:first-child) {
+  .line-3 div:not(:first-child) {
     display: none;
   }
 }
